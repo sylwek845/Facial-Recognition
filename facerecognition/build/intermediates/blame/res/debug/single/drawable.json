@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
+        "source": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable\\lightbulb.png",
+        "source": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\drawable\\lightbulb.png"
+    },
+    {
+        "merged": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_stat_camera.png",
+        "source": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\drawable\\ic_stat_camera.png"
+    }
+]
