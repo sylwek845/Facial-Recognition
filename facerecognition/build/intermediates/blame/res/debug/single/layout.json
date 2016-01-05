@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\layout\\face_detect_surface_view.xml",
-        "source": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\layout\\face_detect_surface_view.xml"
+        "merged": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\build\\intermediates\\res\\merged\\debug\\layout\\catalog_view.xml",
+        "source": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\layout\\catalog_view.xml"
     },
     {
-        "merged": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\layout\\catalog_view.xml",
-        "source": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\layout\\catalog_view.xml"
+        "merged": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\build\\intermediates\\res\\merged\\debug\\layout\\face_detect_surface_view.xml",
+        "source": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\layout\\face_detect_surface_view.xml"
     }
 ]

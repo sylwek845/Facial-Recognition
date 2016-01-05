@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_green.png",
-        "source": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\drawable-xhdpi\\ic_green.png"
+        "merged": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_green.png",
+        "source": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\drawable-xhdpi\\ic_green.png"
     },
     {
-        "merged": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_yellow.png",
-        "source": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\drawable-xhdpi\\ic_yellow.png"
+        "merged": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_red.png",
+        "source": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\drawable-xhdpi\\ic_red.png"
     },
     {
-        "merged": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_red.png",
-        "source": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\drawable-xhdpi\\ic_red.png"
+        "merged": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_yellow.png",
+        "source": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\drawable-xhdpi\\ic_yellow.png"
     }
 ]

@@ -113,10 +113,10 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
     PersonRecognizer fr;
     ToggleButton toggleButtonGrabar,toggleButtonTrain,buttonSearch;
     Button buttonCatalog;
-    ImageView ivGreen,ivYellow,ivRed; 
-    ImageButton imCamera;
+  //  ImageView ivGreen,ivYellow,ivRed;
+   // ImageButton imCamera;
     
-    TextView textState;
+    TextView textState,likely;
     com.googlecode.javacv.cpp.opencv_contrib.FaceRecognizer faceRecognizer;
    
     
@@ -238,17 +238,18 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
             	else
             	{
             		textresult.setText(msg.obj.toString());
-            		 ivGreen.setVisibility(View.INVISIBLE);
-            	     ivYellow.setVisibility(View.INVISIBLE);
-            	     ivRed.setVisibility(View.INVISIBLE);
+                    likely.setText(Integer.toString(mLikely));
+//            		 ivGreen.setVisibility(View.INVISIBLE);
+//            	     ivYellow.setVisibility(View.INVISIBLE);
+//            	     ivRed.setVisibility(View.INVISIBLE);
             	     
-            	     if (mLikely<0);
-            	     else if (mLikely<50)
-            			ivGreen.setVisibility(View.VISIBLE);
-            		else if (mLikely<80)
-            			ivYellow.setVisibility(View.VISIBLE);            			
-            		else 
-            			ivRed.setVisibility(View.VISIBLE);
+//            	     if (mLikely<0);
+//            	     else if (mLikely<50)
+//            			ivGreen.setVisibility(View.VISIBLE);
+//            		else if (mLikely<80)
+//            			ivYellow.setVisibility(View.VISIBLE);
+//            		else
+//            			ivRed.setVisibility(View.VISIBLE);
             	}
             }
         };
@@ -258,14 +259,15 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
         buttonSearch=(ToggleButton)findViewById(R.id.buttonBuscar);
         toggleButtonTrain=(ToggleButton)findViewById(R.id.toggleButton1);
         textState= (TextView)findViewById(R.id.textViewState);
-        ivGreen=(ImageView)findViewById(R.id.imageView3);
-        ivYellow=(ImageView)findViewById(R.id.imageView4);
-        ivRed=(ImageView)findViewById(R.id.imageView2);
-        imCamera=(ImageButton)findViewById(R.id.imageButton1);
+        likely= (TextView)findViewById(R.id.textLikely);
+//        ivGreen=(ImageView)findViewById(R.id.imageView3);
+//        ivYellow=(ImageView)findViewById(R.id.imageView4);
+//        ivRed=(ImageView)findViewById(R.id.imageView2);
+       // imCamera=(ImageButton)findViewById(R.id.imageButton1);
         
-        ivGreen.setVisibility(View.INVISIBLE);
-        ivYellow.setVisibility(View.INVISIBLE);
-        ivRed.setVisibility(View.INVISIBLE);
+//        ivGreen.setVisibility(View.INVISIBLE);
+//        ivYellow.setVisibility(View.INVISIBLE);
+//        ivRed.setVisibility(View.INVISIBLE);
         text.setVisibility(View.INVISIBLE);
         textresult.setVisibility(View.INVISIBLE);
     
@@ -308,9 +310,9 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
 						toggleButtonGrabar.setVisibility(View.VISIBLE);
 					
 
-					ivGreen.setVisibility(View.INVISIBLE);
-					ivYellow.setVisibility(View.INVISIBLE);
-					ivRed.setVisibility(View.INVISIBLE);
+//					ivGreen.setVisibility(View.INVISIBLE);
+//					ivYellow.setVisibility(View.INVISIBLE);
+//					ivRed.setVisibility(View.INVISIBLE);
 					
 
 				} else {
@@ -343,23 +345,23 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
 			}
 		});
         
-        imCamera.setOnClickListener(new View.OnClickListener() {
-
-			public void onClick(View v) {
-				
-				if (mChooseCamera==frontCam)
-				{
-					mChooseCamera=backCam;
-					mOpenCvCameraView.setCamBack();
-				}
-				else
-				{
-					mChooseCamera=frontCam;
-					mOpenCvCameraView.setCamFront();
-					
-				}
-			}
-		});
+//        imCamera.setOnClickListener(new View.OnClickListener() {
+//
+//			public void onClick(View v) {
+//
+//				if (mChooseCamera==frontCam)
+//				{
+//					mChooseCamera=backCam;
+//					mOpenCvCameraView.setCamBack();
+//				}
+//				else
+//				{
+//					mChooseCamera=frontCam;
+//					mOpenCvCameraView.setCamFront();
+//
+//				}
+//			}
+//		});
         
         buttonSearch.setOnClickListener(new View.OnClickListener() {
 
@@ -540,10 +542,10 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
 //        mEigen = menu.add("EigenFaces");
 //        mLBPH.setChecked(true);
         }
-        else
-        {imCamera.setVisibility(View.INVISIBLE);
-	        	
-        }
+//        else
+//        {imCamera.setVisibility(View.INVISIBLE);
+//
+//        }
         //mOpenCvCameraView.setAutofocus();
         return true;
     }

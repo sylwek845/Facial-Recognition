@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/face-recognition-master.iml" filepath="$PROJECT_DIR$/face-recognition-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Facial-Recognition.iml" filepath="$PROJECT_DIR$/Facial-Recognition.iml" />
       <module fileurl="file://$PROJECT_DIR$/facerecognition/facerecognition.iml" filepath="$PROJECT_DIR$/facerecognition/facerecognition.iml" />
       <module fileurl="file://$PROJECT_DIR$/openCVLibrary249/openCVLibrary249.iml" filepath="$PROJECT_DIR$/openCVLibrary249/openCVLibrary249.iml" />
     </modules>

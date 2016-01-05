@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "outputFile": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,14 +11,7 @@
                     "endOffset": 326
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 113,
-                        "endColumn": 34,
-                        "endOffset": 143
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 378
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 822,
-                        "endColumn": 51,
-                        "endOffset": 869
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -49,14 +35,7 @@
                     "endOffset": 460
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 549,
-                        "endColumn": 81,
-                        "endOffset": 626
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -68,14 +47,7 @@
                     "endOffset": 503
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 284,
-                        "endColumn": 42,
-                        "endOffset": 322
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -87,14 +59,7 @@
                     "endOffset": 569
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 327,
-                        "endColumn": 65,
-                        "endOffset": 388
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -106,14 +71,7 @@
                     "endOffset": 618
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 670,
-                        "endColumn": 48,
-                        "endOffset": 714
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -125,14 +83,7 @@
                     "endOffset": 672
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 768,
-                        "endColumn": 53,
-                        "endOffset": 817
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -144,14 +95,7 @@
                     "endOffset": 711
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 631,
-                        "endColumn": 38,
-                        "endOffset": 665
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -163,14 +107,7 @@
                     "endOffset": 754
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 241,
-                        "endColumn": 42,
-                        "endOffset": 279
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -182,14 +119,7 @@
                     "endOffset": 803
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 719,
-                        "endColumn": 48,
-                        "endOffset": 763
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -201,14 +131,7 @@
                     "endOffset": 855
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 446,
-                        "endColumn": 51,
-                        "endOffset": 493
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -220,14 +143,7 @@
                     "endOffset": 908
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 393,
-                        "endColumn": 52,
-                        "endOffset": 441
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -239,14 +155,7 @@
                     "endOffset": 949
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 148,
-                        "endColumn": 40,
-                        "endOffset": 184
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -258,14 +167,7 @@
                     "endOffset": 1001
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 189,
-                        "endColumn": 51,
-                        "endOffset": 236
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -277,14 +179,7 @@
                     "endOffset": 1052
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 498,
-                        "endColumn": 50,
-                        "endOffset": 544
-                    }
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -292,17 +187,17 @@
                     "startLine": 18,
                     "startColumn": 4,
                     "startOffset": 1057,
-                    "endColumn": 57,
-                    "endOffset": 1110
+                    "endColumn": 60,
+                    "endOffset": 1113
                 },
                 "from": {
-                    "file": "C:\\Users\\Burol\\AndroidStudioProjects\\face-recognition-master\\facerecognition\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\burol\\AndroidStudioProjects\\Facial-Recognition\\facerecognition\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 57,
-                        "endOffset": 108
+                        "startOffset": 57,
+                        "endColumn": 60,
+                        "endOffset": 113
                     }
                 }
             }
