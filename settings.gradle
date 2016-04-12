@@ -1,2 +1,1 @@
-include ':openCVLibrary249'
-include ':facerecognition'
+include ':facerecognition', ':openCVLibrary249'
