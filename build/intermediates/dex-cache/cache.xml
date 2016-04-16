@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Burol\AndroidStudioProjects\face-recognition-master\facerecognition\build\intermediates\exploded-aar\face-recognition-master\openCVLibrary249\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="2c73dcac835b44414bcbf0e2f985463a35589621">
-        <dex dex="C:\Users\Burol\AndroidStudioProjects\face-recognition-master\facerecognition\build\intermediates\pre-dexed\debug\face-recognition-master-openCVLibrary249-unspecified_c7b862a67e251ac53dc50255ae85ac75b9640a73.jar" />
-    </item>
-    <item
         jar="C:\Users\Burol\AndroidStudioProjects\face-recognition-master\facerecognition\libs\javacpp.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -21,6 +14,13 @@
         revision="23.0.2"
         sha1="1824ed7a180ee32aa57f5632a489c10aad8f1804">
         <dex dex="C:\Users\Burol\AndroidStudioProjects\face-recognition-master\facerecognition\build\intermediates\pre-dexed\debug\javacv_1b322edeb08e1397eccfa4176a558f276422127a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Burol\AndroidStudioProjects\face-recognition-master\facerecognition\build\intermediates\exploded-aar\face-recognition-master\openCVLibrary249\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="dad88beff253deacb7b926fa8edafc4423d25c4e">
+        <dex dex="C:\Users\Burol\AndroidStudioProjects\face-recognition-master\facerecognition\build\intermediates\pre-dexed\debug\face-recognition-master-openCVLibrary249-unspecified_c7b862a67e251ac53dc50255ae85ac75b9640a73.jar" />
     </item>
 
 </items>

@@ -16,4 +16,6 @@
     <string name="SSearching">Searching</string>
     <string name="SFrontCamera">Front Camera</string>
     <string name="SBackCamera">Back Camera</string>
+    <string name="title_activity_main">Scottish Weather</string>
+    <string name="developed">Developed by Sylwester Zalewski</string>
 </resources>
