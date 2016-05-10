@@ -145,7 +145,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
  
                     fr=new PersonRecognizer(mPath);
                     String s = getResources().getString(R.string.Straininig);
-                    Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
+                  //  Toast.makeText(getApplicationContext(),s, Toast.LENGTH_LONG).show();
                     fr.load();
                     
                     try {
@@ -239,6 +239,13 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
             	{
             		textresult.setText(msg.obj.toString());
                     likely.setText(Integer.toString(mLikely));
+                    if(mLikely < 80)
+                    {
+                        DataExchanger.setName(msg.obj.toString());
+                        Intent intent = new Intent(FdActivity.this,
+                                DataActivity.class);
+                        startActivity(intent);
+                    }
 //            		 ivGreen.setVisibility(View.INVISIBLE);
 //            	     ivYellow.setVisibility(View.INVISIBLE);
 //            	     ivRed.setVisibility(View.INVISIBLE);
@@ -258,6 +265,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
         toggleButtonGrabar=(ToggleButton)findViewById(R.id.toggleButtonGrabar);
         buttonSearch=(ToggleButton)findViewById(R.id.buttonBuscar);
         toggleButtonTrain=(ToggleButton)findViewById(R.id.toggleButton1);
+
         textState= (TextView)findViewById(R.id.textViewState);
         likely= (TextView)findViewById(R.id.textLikely);
 //        ivGreen=(ImageView)findViewById(R.id.imageView3);
@@ -270,7 +278,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
 //        ivRed.setVisibility(View.INVISIBLE);
         text.setVisibility(View.INVISIBLE);
         textresult.setVisibility(View.INVISIBLE);
-    
+
 
       
         toggleButtonGrabar.setVisibility(View.INVISIBLE);
@@ -368,18 +376,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
      			public void onClick(View v) {
      				if (buttonSearch.isChecked())
      				{
-     					if (!fr.canPredict())
-     						{
-     						buttonSearch.setChecked(false);
-     			            Toast.makeText(getApplicationContext(), getResources().getString(R.string.SCanntoPredic), Toast.LENGTH_LONG).show();
-     			            return;
-     						}
-     					textState.setText(getResources().getString(R.string.SSearching));
-     					toggleButtonGrabar.setVisibility(View.INVISIBLE);
-     					toggleButtonTrain.setVisibility(View.INVISIBLE);
-     					text.setVisibility(View.INVISIBLE);
-     					faceState=SEARCHING;
-     					textresult.setVisibility(View.VISIBLE);
+     				search();
      				}
      				else
      				{
@@ -399,8 +396,25 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
         {
         	Log.e("Error","Error creating directory");
         }
+        search();
     }
-    
+    public void search()
+    {
+//        if (!fr.canPredict())
+//        {
+//            buttonSearch.setChecked(false);
+//            Toast.makeText(getApplicationContext(), getResources().getString(R.string.SCanntoPredic), Toast.LENGTH_LONG).show();
+//            return;
+//        }
+        textState.setText(getResources().getString(R.string.SSearching));
+        toggleButtonGrabar.setVisibility(View.INVISIBLE);
+        toggleButtonTrain.setVisibility(View.INVISIBLE);
+        text.setVisibility(View.INVISIBLE);
+        faceState=SEARCHING;
+        textresult.setVisibility(View.INVISIBLE);
+        buttonCatalog.setVisibility(View.INVISIBLE);
+        buttonSearch.setVisibility(View.INVISIBLE);
+    }
     void grabarOnclick()
     {
     	if (toggleButtonGrabar.isChecked())

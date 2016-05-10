@@ -29,6 +29,45 @@ public class DataExchanger {
     }
 
     private static int element = -999;
+    private static int suc = 0;
+
+    public static int getDay() {
+        return day;
+    }
+
+    public static void setDay(int day) {
+        DataExchanger.day = day;
+    }
+
+    private static int day = 0;
+
+    public static String getName() {
+        return name;
+    }
+
+    public static void setName(String name) {
+        DataExchanger.name = name;
+    }
+
+    private static String name = "";
+
+    public static int getUnsuc() {
+        return unsuc;
+    }
+
+    public static void setUnsuc(int unsuc) {
+        DataExchanger.unsuc = unsuc;
+    }
+
+    public static int getSuc() {
+        return suc;
+    }
+
+    public static void setSuc(int suc) {
+        DataExchanger.suc = suc;
+    }
+
+    private static int unsuc = 0;
 
     public static boolean isCelsius() {
         return Celsius;

@@ -94,6 +94,33 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/yesbut"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/city_name"
+        android:layout_marginBottom="22dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/nobut"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/yesbut"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/msg"
+        android:layout_above="@+id/nobut"
+        android:layout_toRightOf="@+id/city_rain"
+        android:layout_marginBottom="28dp" />
 
 
 </RelativeLayout>

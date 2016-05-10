@@ -7,7 +7,9 @@ import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 
@@ -21,6 +23,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.graphics.Bitmap;
+import android.text.format.Time;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -37,7 +40,13 @@ public class DB extends SQLiteOpenHelper {
     public static final String LAT_NAME = "lat";
     public static final String LONG_NAME = "lon";
     public static final String NAME = "name";
-    public static final String TABLE_WEATHER = "weathers";
+    public static final String Success = "suc";
+    public static final String Last = "last";
+    public static final String Unsuc = "unsuc";
+    public static final String TABLE_WEATHER = "faces";
+    Calendar c = Calendar.getInstance();
+    SimpleDateFormat iso8601Format = new SimpleDateFormat(
+            "yyyy-MM-dd HH:mm:ss");
     private HashMap hp;
 
     public DB(Context context)
@@ -55,10 +64,16 @@ public class DB extends SQLiteOpenHelper {
         // TODO Auto-generated method stub
         db.execSQL(
                 "create table " + TABLE_WEATHER +
-                        "(id integer primary key, name text,lon text,lat text);"
+                        "(id integer primary key, name text,lon text,lat text,suc text,unsuc text, last text);"
         );
     }
-
+    public void reCreateTable(SQLiteDatabase db)
+    {
+        db.execSQL(
+                "create table " + TABLE_WEATHER +
+                        "(id integer primary key, name text,lon text,lat text,suc text,unsuc text, last text);"
+        );
+    }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // TODO Auto-generated method stub
@@ -70,14 +85,21 @@ public class DB extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_WEATHER);
     }
-    public boolean insertdata  (String name, String lon, String lat)
+    public boolean insertdata  (String name, String lon, String lat,String suc, String unsuc)
     {
+        Time today = new Time(Time.getCurrentTimezone());
+        today.setToNow();
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
+        contentValues.put("id",999);
         contentValues.put("name", name);
         contentValues.put("lon", lon);
         contentValues.put("lat", lat);
+        contentValues.put("suc", suc);
+        contentValues.put("unsuc", unsuc);
+        contentValues.put("last", String.valueOf(today.monthDay));
         db.insert(TABLE_WEATHER, null, contentValues);
+        db.close(); // Closing database connection
         return true;
     }
 
@@ -90,15 +112,22 @@ public class DB extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_WEATHER, new String[]{"id",
-                        NAME, LONG_NAME, LONG_NAME}, "id" + "=?",
+                        NAME, LAT_NAME, LONG_NAME,Success,Unsuc,Last}, "id" + "=?",
                 new String[]{String.valueOf(id)}, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
         WeatherData weatherData = new WeatherData();
-        weatherData.setCity(cursor.getString(0));
-        weatherData.setCoordLon(Double.parseDouble(cursor.getString(1)));
-        weatherData.setCoordLon(Double.parseDouble(cursor.getString(2)));
+        weatherData.setCity(cursor.getString(1));
+        try {
+            weatherData.setCoordLat(Double.parseDouble(cursor.getString(2)));
+            weatherData.setCoordLon(Double.parseDouble(cursor.getString(3)));
+        }
+        catch (Exception e){}
+        DataExchanger.setSuc(Integer.parseInt(cursor.getString(4)));
+        DataExchanger.setUnsuc(Integer.parseInt(cursor.getString(5)));
+        DataExchanger.setDay(Integer.parseInt(cursor.getString(6)));
+
         return weatherData;
     }
 
@@ -111,7 +140,10 @@ public class DB extends SQLiteOpenHelper {
         int numRows = (int) DatabaseUtils.queryNumEntries(db, "weathers");
         return numRows;
     }
+    public void addfacerecstats(int suc, int unsuc)
+    {
 
+    }
     /**
      * Insert data into database
      * @param weatherData object which you want to insert
